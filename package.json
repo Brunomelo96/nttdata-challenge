@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ui5/webcomponents": "^1.10.4",
+    "@ui5/webcomponents-fiori": "^1.10.4",
+    "@ui5/webcomponents-react": "^1.9.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",

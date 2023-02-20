@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # Prevent yarn.lock push to repo
 *.lock
+.vscode
 
 node_modules
 dist
