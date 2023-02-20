@@ -2,6 +2,10 @@
 .Wrapper {
   display: flex;
   flex-direction: column;
-  margin: 4ch 30ch 0 30ch;
+  margin: 0 auto;
+  margin-top: 4ch;
+  width: 100%;
   max-width: 1280px;
+  min-width: 538px;
+  gap: 4ch;
 }

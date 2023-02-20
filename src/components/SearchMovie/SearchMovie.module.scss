@@ -1,0 +1,15 @@
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  width: 100%;
+}
+
+.Input {
+  min-width: 60%;
+}
+
+.Button {
+  min-width: 18%;
+}

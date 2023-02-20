@@ -1,5 +1,7 @@
 import ApplicationTitle from "@/components/ApplicationTitle"
+import SearchMovie from "@/components/SearchMovie"
 import style from './Main.module.scss'
+
 const Main: React.FC = () => {
 
   return (
@@ -7,7 +9,11 @@ const Main: React.FC = () => {
       className={style.Wrapper}
     >
       <ApplicationTitle />
-      <div>search</div>
+      <SearchMovie
+        value=""
+        onSearchClick={() => {}}
+        onResetClick={() => {}}
+      />
       <div>movie</div>
     </main>
   )
