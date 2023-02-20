@@ -4,9 +4,9 @@
     "es2021": true
   },
   "extends": [
-    "prettier",
     "plugin:react/recommended",
-    "standard-with-typescript"
+    "standard-with-typescript",
+    "prettier"
   ],
   "overrides": [
   ],
@@ -15,8 +15,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "prettier",
-    "react"
+    "react",
+    "prettier"
   ],
   "rules": {
     "prettier/prettier": "error"
