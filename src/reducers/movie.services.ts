@@ -1,10 +1,10 @@
 import { Movie } from "@/models/interfaces/movie.interface"
 import { MOVIE_API_URL } from "@/constants/env"
 
-const getBySearch = async (): Promise<Movie[]> => 
-  await fetch(`${MOVIE_API_URL}`)
+const getBySearch = async (data: string): Promise<Movie> => 
+  await fetch(`${MOVIE_API_URL}&s=${data}`)
     .then((resolve) => resolve.json())
 
-export {
+export const MovieService = {
   getBySearch,
 }

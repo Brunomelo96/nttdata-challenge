@@ -1,8 +1,13 @@
+import { useAppDispatch } from "@/app/hooks"
 import ApplicationTitle from "@/components/ApplicationTitle"
 import SearchMovie from "@/components/SearchMovie"
+import { getMovieByTitle } from "@/reducers/movie.actions"
+import { useState } from "react"
 import style from './Main.module.scss'
 
 const Main: React.FC = () => {
+  const [search, setSearch] = useState('')
+  const dispatch = useAppDispatch()
 
   return (
     <main
@@ -10,9 +15,10 @@ const Main: React.FC = () => {
     >
       <ApplicationTitle />
       <SearchMovie
-        value=""
-        onSearchClick={() => {}}
-        onResetClick={() => {}}
+        value={search}
+        onSearchChange={(value?: string) => { !!value?.length && setSearch(value) }}
+        onSearchClick={() => { !!search.length && dispatch(getMovieByTitle(search)) }}
+        onResetClick={() => { setSearch('')}}
       />
       <div>movie</div>
     </main>

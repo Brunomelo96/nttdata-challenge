@@ -2,13 +2,15 @@ import { Button, Card, Input } from "@ui5/webcomponents-react"
 import style from "./SearchMovie.module.scss"
 
 interface SearchMovieProps {
-  value: string,
+  value?: string,
+  onSearchChange: (value?: string) => void,
   onSearchClick: VoidFunction,
   onResetClick: VoidFunction,
 }
 
 const SearchMovie: React.FC<SearchMovieProps> = ({
   value,
+  onSearchChange,
   onSearchClick,
   onResetClick,
 }) => (
@@ -19,6 +21,7 @@ const SearchMovie: React.FC<SearchMovieProps> = ({
       value={value}
       className={style.Input}
       placeholder="Qual filme você quer buscar?"
+      onChange={(event) => onSearchChange(event?.target?.value)}
     />
     <Button
       className={style.Button}
