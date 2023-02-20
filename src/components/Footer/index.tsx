@@ -1,8 +1,6 @@
 
 const Footer = () => (
-  <footer slot="footer">
-    footer
-  </footer>
+  <footer slot="footer" />
 )
 
 export default Footer
