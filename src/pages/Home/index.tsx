@@ -6,12 +6,12 @@ import style from "./Home.module.scss"
 const Home = () => (
   <Page
     className={style.Page}
-    header={<Header />}
-    footer={<Footer />}
   >
+    <Header />
     <main>
       main
     </main>
+    <Footer />
   </Page>
 )
 
