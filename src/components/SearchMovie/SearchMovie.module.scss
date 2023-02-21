@@ -2,14 +2,14 @@
 .Wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   gap: 2ch;
-  width: 100%;
 }
 
 .Input {
-  min-width: 60%;
+  width: 50ch;
 }
 
 .Button {
-  min-width: 18%;
+  width: 18ch;
 }
