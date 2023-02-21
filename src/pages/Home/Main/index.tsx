@@ -21,9 +21,7 @@ const Main: React.FC = () => {
         onSearchClick={() => { !!search.length && dispatch(getMovieByTitle(search)) }}
         onResetClick={() => { setSearch('')}}
       />
-      <section>
-        <Movie />
-      </section>
+      <Movie />
     </main>
   )
 }

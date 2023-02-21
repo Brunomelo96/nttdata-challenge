@@ -1,0 +1,15 @@
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4ch;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: 2ch;
+
+  max-width: 80ch;
+}
