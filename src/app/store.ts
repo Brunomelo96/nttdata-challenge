@@ -3,7 +3,7 @@ import { movieReducer } from '@/reducers/movie.reducer';
 
 export const store = configureStore({
   reducer: {
-    monsters: movieReducer,
+    movie: movieReducer,
   },
 });
 
