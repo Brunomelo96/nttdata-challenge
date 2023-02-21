@@ -8,6 +8,7 @@ export interface Movie {
   poster: string,
   type: string,
   response: boolean,
+  rating: number,
 }
 
 export interface MovieData {
@@ -20,6 +21,7 @@ export interface MovieData {
   Type: string,
   Response: string,
   Error?: string,
+  imdbRating: string,
 }
 
 export interface EmptyMovie {

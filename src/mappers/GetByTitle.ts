@@ -18,5 +18,6 @@ export default (data: MovieData,): Movie | EmptyMovie => {
     poster:  data.Poster,
     type:  data.Type,
     response: true,
+    rating: Number(data.imdbRating),
   }) as Movie
 }

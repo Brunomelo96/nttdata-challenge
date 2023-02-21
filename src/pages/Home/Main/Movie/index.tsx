@@ -1,4 +1,8 @@
 import { useAppSelector } from "@/app/hooks"
+import Default from "@/components/Default"
+import Empty from "@/components/Empty"
+import Error from "@/components/Error"
+import Loading from "@/components/Loading"
 import SelectedMovie from "@/components/SelectedMovie"
 import { Movie } from "@/models/interfaces/movie.interface"
 import { selectSelectedMovie } from "@/reducers/movie.selectors"
@@ -8,33 +12,25 @@ const MovieSection = () => {
 
   if (selectedMovie.loading === "default") {
     return (
-      <section>
-        default state
-      </section>
+      <Default />
     )
   }
 
   if (selectedMovie.loading === "pending") {
     return (
-      <section>
-        loading
-      </section>
+      <Loading />
     )
   }
 
   if (selectedMovie.loading === "rejected") {
     return (
-      <section>
-        rejected
-      </section>
+      <Error />
     )
   }
 
   if (!selectedMovie.data?.response) {
     return (
-      <section>
-        empty
-      </section>
+      <Empty />
     )
   }
 
