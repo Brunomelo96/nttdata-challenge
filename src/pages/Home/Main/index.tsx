@@ -3,6 +3,7 @@ import ApplicationTitle from "@/components/ApplicationTitle"
 import SearchMovie from "@/components/SearchMovie"
 import { getMovieByTitle } from "@/reducers/movie.actions"
 import { useState } from "react"
+import Movie from "./Movie"
 import style from './Main.module.scss'
 
 const Main: React.FC = () => {
@@ -20,7 +21,9 @@ const Main: React.FC = () => {
         onSearchClick={() => { !!search.length && dispatch(getMovieByTitle(search)) }}
         onResetClick={() => { setSearch('')}}
       />
-      <div>movie</div>
+      <section>
+        <Movie />
+      </section>
     </main>
   )
 }
