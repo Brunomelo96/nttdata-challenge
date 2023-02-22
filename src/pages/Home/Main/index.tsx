@@ -1,15 +1,16 @@
 import ApplicationTitle from "components/ApplicationTitle"
 import SearchMovie from "./SearchMovie"
-import Movie from "./Movie"
+import MovieSection from "./MovieSection"
 import style from './Main.module.scss'
 
 const Main: React.FC = () => (
   <main
+    data-testid='main-section'
     className={style.Wrapper}
   >
     <ApplicationTitle />
     <SearchMovie />
-    <Movie />
+    <MovieSection />
   </main>
 )
 
