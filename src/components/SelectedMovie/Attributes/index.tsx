@@ -1,7 +1,7 @@
-import { Movie } from "models/interfaces/movie.interface"
-import { Text } from "@ui5/webcomponents-react"
-import style from "./Attributes.module.scss"
-import Review from "./Review"
+import { Movie } from 'models/interfaces/movie.interface'
+import { Text } from '@ui5/webcomponents-react'
+import style from './Attributes.module.scss'
+import Review from './Review'
 
 type AttributeProps = Pick<Movie, 'actors' | 'rating'>
 

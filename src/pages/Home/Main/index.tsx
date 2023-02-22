@@ -1,6 +1,6 @@
-import ApplicationTitle from "components/ApplicationTitle"
-import SearchMovie from "./SearchMovie"
-import MovieSection from "./MovieSection"
+import ApplicationTitle from 'components/ApplicationTitle'
+import SearchMovie from './SearchMovie'
+import MovieSection from './MovieSection'
 import style from './Main.module.scss'
 
 const Main: React.FC = () => (

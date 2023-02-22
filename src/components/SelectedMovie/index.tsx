@@ -1,9 +1,9 @@
-import { Movie } from "models/interfaces/movie.interface"
-import Favorite from "./Favorite"
-import Header from "./Header"
-import Image from "./Image"
-import style from "./SelectedMovie.module.scss"
-import Attributes from "./Attributes"
+import { Movie } from 'models/interfaces/movie.interface'
+import Favorite from './Favorite'
+import Header from './Header'
+import Image from './Image'
+import style from './SelectedMovie.module.scss'
+import Attributes from './Attributes'
 
 interface SelectedMovieProps {
   movie: Movie

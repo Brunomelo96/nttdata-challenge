@@ -1,8 +1,8 @@
-import { Movie, MovieData, EmptyMovie } from "models/interfaces/movie.interface";
+import { Movie, MovieData, EmptyMovie } from 'models/interfaces/movie.interface';
 
 const GetByTitle = (data: MovieData,): Movie | EmptyMovie => {
 
-  if (data?.Response === "False") {
+  if (data?.Response === 'False') {
     return ({
       response: false,
       error: data.Error,

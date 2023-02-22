@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react"
-import { ThemeProvider } from "@ui5/webcomponents-react"
-import Footer from ".."
+import { render, screen } from '@testing-library/react'
+import { ThemeProvider } from '@ui5/webcomponents-react'
+import Footer from '..'
 
 describe('Footer', () => {
   it('should render component', () => {
@@ -10,7 +10,7 @@ describe('Footer', () => {
       </ThemeProvider>
     )
 
-    expect(screen.getByTestId("footer"))
+    expect(screen.getByTestId('footer'))
       .toBeInTheDocument()
   })
 })

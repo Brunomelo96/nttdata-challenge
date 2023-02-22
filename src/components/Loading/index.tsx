@@ -1,9 +1,9 @@
-import { Loader } from "@ui5/webcomponents-react"
+import { Loader } from '@ui5/webcomponents-react'
 
 const Loading = () => (
   <Loader
     data-testid='loading-fallback'
-    type="Indeterminate"
+    type='Indeterminate'
   />
 )
 

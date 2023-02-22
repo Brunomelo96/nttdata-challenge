@@ -1,8 +1,8 @@
-import { Button, Input } from "@ui5/webcomponents-react"
-import { useAppDispatch } from "app/hooks"
-import { useState } from "react"
-import { getMovieByTitle } from "reducers/movie.actions"
-import style from "./SearchMovie.module.scss"
+import { Button, Input } from '@ui5/webcomponents-react'
+import { useAppDispatch } from 'app/hooks'
+import { useState } from 'react'
+import { getMovieByTitle } from 'reducers/movie.actions'
+import style from './SearchMovie.module.scss'
 
 const SearchMovie = () => {
   const [search, setSearch] = useState('')
@@ -16,7 +16,7 @@ const SearchMovie = () => {
         data-testid='search-input'
         value={search}
         className={style.Input}
-        placeholder="What movie are you looking for?"
+        placeholder='What movie are you looking for?'
         onChange={(event) => {
           event?.target?.value?.length && setSearch(event?.target?.value)
         }}

@@ -2,7 +2,7 @@
 const Footer = () => (
   <footer
     data-testid='footer'
-    slot="footer"
+    slot='footer'
   />
 )
 
