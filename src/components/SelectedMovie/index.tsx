@@ -31,7 +31,10 @@ const SelectedMovie: React.FC<SelectedMovieProps> = ({
 
         <Favorite />
       </div>
-      <Image src={movie.poster} />
+      <Image
+        title={movie.title}
+        src={movie.poster}
+      />
     </section>
   )
 }
