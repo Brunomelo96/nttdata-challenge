@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 4ch;
+  max-width: calc(412px - 4ch);
 }
 
 .Content {
@@ -12,4 +13,5 @@
   gap: 2ch;
 
   max-width: 80ch;
+  min-width: 0;
 }
