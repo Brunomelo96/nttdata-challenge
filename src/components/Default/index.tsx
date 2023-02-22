@@ -3,6 +3,7 @@ import "@ui5/webcomponents-fiori/dist/illustrations/BeforeSearch.js"
 
 const Default = () => (
   <IllustratedMessage
+    data-testid='default-fallback'
     titleText="You haven't searched for a movie yet"
     subtitleText="Please, insert a movie you would like to search for!"
     name="BeforeSearch"

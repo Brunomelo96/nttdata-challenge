@@ -2,6 +2,7 @@ import { ThemingParameters } from "@ui5/webcomponents-react-base"
 
 const Header = () => (
   <header
+    data-testid='header'
     slot="header"
     style={{
       height: '4ch',

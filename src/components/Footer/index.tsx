@@ -1,6 +1,9 @@
 
 const Footer = () => (
-  <footer slot="footer" />
+  <footer
+    data-testid='footer'
+    slot="footer"
+  />
 )
 
 export default Footer
