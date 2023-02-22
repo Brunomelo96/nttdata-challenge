@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import { movieReducer } from '@/reducers/movie.reducer';
+import { movieReducer } from 'reducers/movie.reducer';
 
 export const store = configureStore({
   reducer: {

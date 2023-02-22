@@ -1,7 +1,7 @@
 import { getMovieByTitle } from "../movie.actions"
 import { movieReducer } from "../movie.reducer"
-import movie from "@/data/movie"
-import emptyMovie from "@/data/emptyMovie"
+import movie from "data/movie"
+import emptyMovie from "data/emptyMovie"
 
 describe("Movie Reducer", () => {
   it("should return the initial state", () => {

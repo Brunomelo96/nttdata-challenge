@@ -1,4 +1,4 @@
-import { EmptyMovie } from "@/models/interfaces/movie.interface"
+import { EmptyMovie } from "models/interfaces/movie.interface"
 
 export default {
   response: false,

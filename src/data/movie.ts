@@ -1,4 +1,4 @@
-import { Movie } from "@/models/interfaces/movie.interface" 
+import { Movie } from "models/interfaces/movie.interface" 
 
 export default {
   title: "The Lord of the Rings: The Fellowship of the Ring",

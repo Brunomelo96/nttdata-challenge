@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit"
-import { SearchedMovie } from "@/models/interfaces/movie.interface";
+import { SearchedMovie } from "models/interfaces/movie.interface";
 import { getMovieByTitle } from "./movie.actions";
 
 type Loading = "default" | "pending" | "fulfilled" | "rejected"

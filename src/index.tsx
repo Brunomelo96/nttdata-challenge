@@ -1,11 +1,11 @@
+import { ThemeProvider } from '@ui5/webcomponents-react'
+import '@ui5/webcomponents-react/dist/Assets'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { Provider } from 'react-redux'
-import { store } from '@/app/store'
-import { ThemeProvider } from '@ui5/webcomponents-react'
+import { store } from 'app/store'
 import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme'
-import '@ui5/webcomponents-react/dist/Assets'
 
 setTheme("sap_horizon_dark")
 

@@ -1,4 +1,4 @@
-import { Movie, MovieData, EmptyMovie } from "@/models/interfaces/movie.interface";
+import { Movie, MovieData, EmptyMovie } from "models/interfaces/movie.interface";
 
 export default (data: MovieData,): Movie | EmptyMovie => {
 

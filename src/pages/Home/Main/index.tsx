@@ -1,7 +1,7 @@
-import { useAppDispatch } from "@/app/hooks"
-import ApplicationTitle from "@/components/ApplicationTitle"
-import SearchMovie from "@/components/SearchMovie"
-import { getMovieByTitle } from "@/reducers/movie.actions"
+import { useAppDispatch } from "app/hooks"
+import ApplicationTitle from "components/ApplicationTitle"
+import SearchMovie from "components/SearchMovie"
+import { getMovieByTitle } from "reducers/movie.actions"
 import { useState } from "react"
 import Movie from "./Movie"
 import style from './Main.module.scss'
