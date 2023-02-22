@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react"
-import { ThemeProvider } from "@ui5/webcomponents-react"
-import Header from ".."
+import { render, screen } from '@testing-library/react'
+import { ThemeProvider } from '@ui5/webcomponents-react'
+import Header from '..'
 
 describe('Header', () => {
   it('should render component', () => {
@@ -10,7 +10,7 @@ describe('Header', () => {
       </ThemeProvider>
     )
 
-    expect(screen.getByTestId("header"))
+    expect(screen.getByTestId('header'))
       .toBeInTheDocument()
   })
 })

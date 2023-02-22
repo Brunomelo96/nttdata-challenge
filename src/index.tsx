@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import { store } from 'app/store'
 import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme'
 
-setTheme("sap_horizon_dark")
+setTheme('sap_horizon_dark')
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

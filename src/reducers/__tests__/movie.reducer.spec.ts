@@ -1,25 +1,25 @@
-import { getMovieByTitle } from "../movie.actions"
-import { movieReducer } from "../movie.reducer"
-import movie from "data/movie"
-import emptyMovie from "data/emptyMovie"
+import { getMovieByTitle } from '../movie.actions'
+import { movieReducer } from '../movie.reducer'
+import movie from 'data/movie'
+import emptyMovie from 'data/emptyMovie'
 
-describe("Movie Reducer", () => {
-  it("should return the initial state", () => {
+describe('Movie Reducer', () => {
+  it('should return the initial state', () => {
     expect(movieReducer(undefined, { type: undefined }))
       .toEqual({
           data: null,
-          loading: "default"
+          loading: 'default'
       })
   })
 
   it(
-    "should change loading to pending on action pending",
+    'should change loading to pending on action pending',
     () => {
       const action = { type: getMovieByTitle.pending }
       const state = movieReducer(undefined, action)
       expect(state).toEqual(
         expect.objectContaining({
-          loading: "pending",
+          loading: 'pending',
           data: null,
         })
       )
@@ -27,20 +27,20 @@ describe("Movie Reducer", () => {
   )
 
   it(
-    "should change loading to rejected on action rejected",
+    'should change loading to rejected on action rejected',
     () => {
       const action = { type: getMovieByTitle.rejected }
       const state = movieReducer(undefined, action)
       expect(state).toEqual(
         expect.objectContaining({
-          loading: "rejected",
+          loading: 'rejected',
           data: null,
         })
       )
     }
   )
 
-  it("should change movie to empty movie on action fulfilled", () => {
+  it('should change movie to empty movie on action fulfilled', () => {
     const action = {
       type: getMovieByTitle.fulfilled,
       payload: emptyMovie,
@@ -48,13 +48,13 @@ describe("Movie Reducer", () => {
     const state = movieReducer(undefined, action)
       expect(state).toEqual(
         expect.objectContaining({
-          loading: "fulfilled",
+          loading: 'fulfilled',
           data: emptyMovie,
         })
       )
   })
 
-  it("should change movie on action fulfilled", () => {
+  it('should change movie on action fulfilled', () => {
     const action = {
       type: getMovieByTitle.fulfilled,
       payload: movie
@@ -62,7 +62,7 @@ describe("Movie Reducer", () => {
     const state = movieReducer(undefined, action)
       expect(state).toEqual(
         expect.objectContaining({
-          loading: "fulfilled",
+          loading: 'fulfilled',
           data: movie,
         })
       )

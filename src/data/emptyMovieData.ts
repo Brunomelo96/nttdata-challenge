@@ -1,6 +1,6 @@
-import { EmptyMovieData } from "models/interfaces/movie.interface"
+import { EmptyMovieData } from 'models/interfaces/movie.interface'
 
 export default {
-  Response: "False",
-  Error: "Movie not found"
+  Response: 'False',
+  Error: 'Movie not found'
 } as EmptyMovieData

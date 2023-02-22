@@ -1,5 +1,5 @@
-import { RatingIndicator, Text } from "@ui5/webcomponents-react"
-import style from "./Review.module.scss"
+import { RatingIndicator, Text } from '@ui5/webcomponents-react'
+import style from './Review.module.scss'
 
 interface ReviewProps {
   value: number,

@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react"
-import { ThemeProvider } from "@ui5/webcomponents-react"
-import Loading from ".."
+import { render, screen } from '@testing-library/react'
+import { ThemeProvider } from '@ui5/webcomponents-react'
+import Loading from '..'
 
 describe('Loading', () => {
   it('should render component', () => {
@@ -10,7 +10,7 @@ describe('Loading', () => {
       </ThemeProvider>
     )
 
-    expect(screen.getByTestId("loading-fallback"))
+    expect(screen.getByTestId('loading-fallback'))
       .toBeInTheDocument()
   })
 })

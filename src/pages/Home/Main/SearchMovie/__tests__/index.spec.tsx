@@ -1,8 +1,8 @@
-import { fireEvent, render, screen } from "@testing-library/react"
-import { ThemeProvider } from "@ui5/webcomponents-react"
-import { store } from "app/store"
-import { Provider } from "react-redux"
-import SearchMovie from ".."
+import { fireEvent, render, screen } from '@testing-library/react'
+import { ThemeProvider } from '@ui5/webcomponents-react'
+import { store } from 'app/store'
+import { Provider } from 'react-redux'
+import SearchMovie from '..'
 
 const mockDispatch = jest.fn();
 jest.mock('app/hooks', () => ({
