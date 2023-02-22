@@ -1,4 +1,4 @@
-import { Movie } from "@/models/interfaces/movie.interface"
+import { Movie } from "models/interfaces/movie.interface"
 import { Text } from "@ui5/webcomponents-react"
 import style from "./Attributes.module.scss"
 import Review from "./Review"

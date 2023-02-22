@@ -1,4 +1,4 @@
-import { Movie } from "@/models/interfaces/movie.interface"
+import { Movie } from "models/interfaces/movie.interface"
 import Favorite from "./Favorite"
 import Header from "./Header"
 import Image from "./Image"

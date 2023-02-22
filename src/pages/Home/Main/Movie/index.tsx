@@ -1,34 +1,35 @@
-import { useAppSelector } from "@/app/hooks"
-import Default from "@/components/Default"
-import Empty from "@/components/Empty"
-import Error from "@/components/Error"
-import Loading from "@/components/Loading"
-import SelectedMovie from "@/components/SelectedMovie"
-import { Movie } from "@/models/interfaces/movie.interface"
-import { selectSelectedMovie } from "@/reducers/movie.selectors"
+import { useAppSelector } from "app/hooks"
+import Default from "components/Default"
+import Empty from "components/Empty"
+import Error from "components/Error"
+import Loading from "components/Loading"
+import SelectedMovie from "components/SelectedMovie"
+import { Movie } from "models/interfaces/movie.interface"
+import { selectMovieData, selectMovieLoading } from "reducers/movie.selectors"
 
 const MovieSection = () => {
-  const selectedMovie = useAppSelector(selectSelectedMovie)
+  const selectedMovie = useAppSelector(selectMovieData)
+  const selectedMovieLoading = useAppSelector(selectMovieLoading)
 
-  if (selectedMovie.loading === "default") {
+  if (selectedMovieLoading === "default") {
     return (
       <Default />
     )
   }
 
-  if (selectedMovie.loading === "pending") {
+  if (selectedMovieLoading === "pending") {
     return (
       <Loading />
     )
   }
 
-  if (selectedMovie.loading === "rejected") {
+  if (selectedMovieLoading === "rejected") {
     return (
       <Error />
     )
   }
 
-  if (!selectedMovie.data?.response) {
+  if (!selectedMovie?.response) {
     return (
       <Empty />
     )
@@ -36,7 +37,7 @@ const MovieSection = () => {
 
   return (
     <SelectedMovie
-      movie={selectedMovie.data as Movie}
+      movie={selectedMovie as Movie}
     />
   )
 }
