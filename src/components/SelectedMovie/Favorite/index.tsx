@@ -12,6 +12,7 @@ const Favorite = () => {
         icon={favorite ? "heart" : "heart-2"}
         iconEnd
         onClick={() => { setFavorite(!favorite) }}
+        role='button'
       >
         Favorite
       </Button>

@@ -1,6 +1,6 @@
 import { Movie, MovieData, EmptyMovie } from "models/interfaces/movie.interface";
 
-export default (data: MovieData,): Movie | EmptyMovie => {
+const GetByTitle = (data: MovieData,): Movie | EmptyMovie => {
 
   if (data?.Response === "False") {
     return ({
@@ -21,3 +21,5 @@ export default (data: MovieData,): Movie | EmptyMovie => {
     rating: Number(data.imdbRating),
   }) as Movie
 }
+
+export default GetByTitle

@@ -29,4 +29,9 @@ export interface EmptyMovie {
   error: string,
 }
 
+export interface EmptyMovieData {
+  Response: string,
+  Error: string,
+}
+
 export type SearchedMovie = Movie | EmptyMovie 

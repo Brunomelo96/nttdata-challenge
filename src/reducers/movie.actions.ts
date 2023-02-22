@@ -4,5 +4,5 @@ import { MovieService } from './movie.services';
 
 export const getMovieByTitle = createAsyncThunk<SearchedMovie, string>(
   "movie/getMovieByTitle",
-  MovieService.getByTitle,
+  MovieService.getMovieByTitle,
 )
