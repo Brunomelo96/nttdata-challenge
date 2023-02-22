@@ -3,13 +3,22 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+
   gap: 2ch;
 }
 
 .Input {
-  width: 50ch;
+  width: 100%;
+
+  @media screen and (min-width: 600px) {
+    width: 50ch;
+  }
 }
 
 .Button {
-  width: 18ch;
+  width: 100%;
+
+  @media screen and (min-width: 600px) {
+    width: 18ch;
+  }
 }
